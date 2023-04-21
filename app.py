@@ -2,7 +2,7 @@ import os, sys, shutil, time
 
 from flask import Flask, request, jsonify, render_template,send_from_directory
 import pandas as pd
-#from sklearn.externals import joblib
+import joblib
 from joblib import load
 from sklearn.ensemble import RandomForestClassifier
 import numpy as np
