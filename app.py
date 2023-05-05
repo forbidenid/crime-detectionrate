@@ -4,7 +4,10 @@ from flask import Flask, request, jsonify, render_template,send_from_directory
 import pandas as pd
 import joblib
 from joblib import load
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+import sklearn.ensemble._forest
 import numpy as np
 import urllib.request
 import json

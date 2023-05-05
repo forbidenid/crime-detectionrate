@@ -2,8 +2,9 @@ import os, sys, shutil, time
 
 from flask import Flask, request, jsonify, render_template
 import pandas as pd
-from sklearn import joblib
-from sklearn.ensemble import RandomForestClassifier
+import joblib
+from joblib import load
+from sklearn.ensemble._forest import ForestClassifier, ForestRegressor
 import numpy as np
 import urllib.request
 import json
